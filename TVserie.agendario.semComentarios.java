@@ -6,7 +6,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "TVSerie")
+@Entity(tableName = "series")
 
 
 public class TVSerie {
@@ -20,13 +20,13 @@ public class TVSerie {
 
     @Nullable
     @ColumnInfo(name = "TVSerieTitle")
-    private String mTilte;
+    private String mTitle;
 
     private String mPersonage;
 
-    public Museum(@Nullable String title, String personage, int score, String creationDate) {
+    public TVSerie(@Nullable String title, String personage, int score, String creationDate) {
         mTitle = title;
-        mPersonage = Personage;
+        mPersonage = personage;
         mScore = score;
         mCreationDate = creationDate;
     }
